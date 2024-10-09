@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form action="/cadastrar cliente" method="POST">
+        <!-- Campo para o nome completo do cliente -->
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome" name="nome" required>
+        <!-- Campo para o e-mail do cliente -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- Campo para o telefone do cliente -->
+        <label for="telefone">Telefone: </label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <!-- Campo para a data de nascimento do cliente -->
+        <label for="nascimento">Data de Nascimento:</label> <input type="date" id="nascimento" name="nascimento" required>
+        <!-- Campo para o endereço do cliente -->
+        <label for="endereco">Endereço: </label> <input type="text" id="endereco" name="endereco" required>
+        <!-- Botão de envio do formulario --> <button type="submit">Cadastrar</button>
+        </form>
+        </div>
+    <header>
+        <nav>
+        <ul>
+        <li><a href="index.html"><img src="logo.png" alt="" width="5%"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li class="dropdown">
+        <a href="#servicos" class="dropbtn">Serviços</a>
+        <ul class="dropdown-content">
+        <li><a href="#design">Design</a></li>
+        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+        <li><a href="#marketing">Marketing</a></li>
+        </ul>
+        </li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li> <a href="cadastro.html"><button class="btn-login">Cadastre-se</button></a></li>
+        </ul>
+        </nav>
+        <nav class="navsecundaria">
+        <p></p>
+        </nav>
+    </header>
+    <div class="container-login">
+        <center><a href="index.html"><img src="logo.png" alt="" width="25%"></a></center>
+        <h2>Login</h2>
+        <form action="login.html" method="POST">
+        <!-- Campo de Nome de Usuário -->
+        <label for="username">Nome de Usuário ou E-mail:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <!-- Campo de Senha -->
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" required>
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Entrar</button>
+        <!-- Link para cadastro, caso o usuário não tenha uma conta -->
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+        </div>
+</body>
+</html>

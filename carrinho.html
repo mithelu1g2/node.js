@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El carro</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <!--Conteudo principal da página -->
+<main>
+<!-- Seção do carrinho -->
+<section class="carrinho">
+    <!-- Tabela de produtos no carrinho -->
+    <table>
+    <thead>
+    <tr>
+    <th>Produto</th>
+    <th>Quantidade</th>
+    <th>Preço Unitário</th>
+    <th>Total</th>
+    <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Produto 1 -->
+    <tr>
+    <td>Produto Exemplo 1</td>
+    <td>
+    <input type="number" value="1" min="1" class="quantidade">
+    </td>
+    <td class="preco-unitario">R$ 50,00</td>
+    <td class="preco-total">R6 50,00</td>
+    <td>
+    <button class="remover-produto">Remover</button>
+    </td>
+    </tr>
+    <!-- Produto 2 -->
+    <tr>
+    <td>Produto Exemplo 2</td>
+    <td>
+    <input type="number" value="2" min="1" class="quantidade">
+    </td>
+    <td class="preco-unitario">R$ 30,00</td>
+    <td class="preco-total">R$ 60,00</td>
+    <td>
+        <button class="remover-produto">Remover</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <!-- Exibição do total final -->
+    <div class="total-final">
+    <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+    </div>
+    </section>
+    </main>
+    <!-- Adiciona o script para interatividade -->
+    <script src="carrinho.js"></script>
+    </body>
+    </html>
+</body>
+</html>

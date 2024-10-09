@@ -1,0 +1,51 @@
+main{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0,1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 20px;
+}
+
+th {
+    background-color: rgb(164, 211, 253);
+    font-weight: bold;
+}
+
+input.quantidade{
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+button.remover-produto {
+    background-color: rgb(0, 94, 176);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.total-final {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total-final h3 {
+    color: #333;
+}
+
+button.remover-produto.houver {
+    background-color: #ef3950;
+}

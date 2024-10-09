@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ddd3d3;
+  padding: 10px 0;
+  box-shadow: 0px 8px 16px 0px rgba(252, 252, 252, 0.2);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0; 
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.add-responsavel {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.add-responsavel:hover {
+  text-decoration: underline;
+}
+nav {
+  background-color: #ddd3d3;
+  padding: 10px 0;
+  box-shadow: 0px 8px 16px 0px rgba(252, 252, 252, 0.2);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  position: relative; /* Necessário para o posicionamento do dropdown */
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 10px;
+  display: block; /* Torna o link clicável em toda a área */
+  transition: color 0.3s;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li a:hover {
+  color: #47eaff;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+  display: none; /* Esconde o submenu inicialmente */
+  position: absolute; /* Posiciona o submenu em relação ao item pai */
+  background-color: #e7e7e7;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+  min-width: 160px;
+  padding: 0;
+}
+
+nav ul li .dropdown-content li {
+  margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+  padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+  background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+  max-width: 400px;
+  margin: 20vh auto;
+  font-size: 18px;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: "New Amsterdam";
+}
+.form a img{
+  width: 20%;
+  margin-top: 20px;
+  border-radius: 100px;
+  border: 0px;
+}
+
+form:hover {
+  gap: 30px;
+  transform: scale(1.02);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#heading {
+  text-align: center;
+  margin: 0.4em;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  font-family: "New Amsterdam";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.field {
+  margin: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap:2.0em;
+  border-radius: 25px;
+  padding: 0.2em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #202020;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  padding: 10px;
+  font-family: "New Amsterdam";
+
+}
+
+input{
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  width: 90%;
+  color: #d3d3d3;
+  font-family: "New Amsterdam";
+  font-size: 16px;
+}
+
+  
+.button3 {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+ }
+ 
+ .button3::before,
+ .button3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ .button3::before {
+  left: -10px;
+  background: #00aeff;
+ }
+ 
+ .button3::after {
+  right: -10px;
+  background: #00aeff;
+ }
+ 
+ .button3:hover::before,
+ .button3:hover::after {
+  width: 58%;
+ }
+ 
+ .button3:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ .button3 span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+ 
+ 
+ @keyframes slidernbw {
+  to {
+   background-position: 20vw;
+  }
+ }
+
+ 
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  font-family: "New Amsterdam";
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
